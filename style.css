@@ -1,0 +1,107 @@
+body {font-family: 'Montserrat', sans-serif; }
+  
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif; }
+  
+h3 {font-size: 2em;}
+  
+h4 {
+    font-size: 1.5em;
+    color: #ffcc00;} 
+    
+.material-icons {font-size: 40px;}
+
+/* Section HEADER */
+
+header {
+	background: #000000;}
+header a {
+    color: white;
+    font-weight: bold;}
+header a:hover {
+    color: #F4DFC8;}
+header a:active {
+    color: #F4DFC8;}
+  
+ul {padding: 2em;}
+  
+.nav-pills .nav-link.active, .nav-pills .show .nav-link {background-color: #f7ff56;}
+
+/* Section PRESENTATION */
+
+#presentation {
+    flex-direction: column;
+    background: url("./img/Premium\ Photo\ _\ Top\ view\ of\ laptop\ with\ coffee\ and\ plant.jpg") no-repeat 0 0 #000;
+    height: 800px;
+    background-size: cover;
+    color: #000000;
+    position: relative;}
+
+#presentation h1, #presentation h2 {
+    z-index: 1;}
+
+/* Section A PROPOS */
+
+#apropos {background-color: #FAF6F0;}
+
+.carousel {margin: 2% 0;}
+
+.flex {display: flex; flex-direction: column;}
+
+.paragraphe {background-color: white;}
+
+.vignette {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    opacity: 0.5;}
+
+.vignette.active {transform: scale(1.2); opacity: 1;}
+
+.icone-users .fas {transform: rotate(-45deg); color: beige;}
+
+#equipe p {margin-top: 2.5em;}
+
+#equipe h4 {margin-bottom: 2em;}
+
+li {list-style-type: none;}
+
+/* section COMPETENCES */
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 5.5rem;
+    --fg: #F4DFC8;
+    --bg: rgb(33, 34, 36);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    color: var(--fg);
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+  }
+
+/* section PROFILS & CONTACT */
+
+#profils {background-color: #FAF6F0;}
+
+

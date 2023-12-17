@@ -1,0 +1,23 @@
+body {font-family: 'Montserrat', sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif; }
+
+#headerportfolio {
+    flex-direction: column;
+    background: url("./img/Premium\ Photo\ _\ Top\ view\ of\ laptop\ with\ coffee\ and\ plant.jpg") no-repeat 0 0 #000;
+    height: 400px;
+    background-size: cover;
+    color: #000000;
+    position: relative;}
+
+#presentation h1, #presentation h2 {
+    z-index: 1;
+}
+
+#portfolio h5 {font-size: 2em;}
+
+#portfolio .card1,.card3,.card5,.card7 {background-color: whitesmoke;}
+
+#portfolio .card2,.card4,.card6,.card8 {background-color: #FAF6F0;}
+
+#footer {background-color: #F4DFC8;}
